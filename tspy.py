@@ -1,1 +1,0 @@
-c,n=[int(i) for i in input().split()];print(*[('%.3f'%((1+(k/100))**i)) if k<c else (('%.3f\n'%((1+(k/100))**i))) for i in range(1,n+1) for k in range(1,c+1)  ])
