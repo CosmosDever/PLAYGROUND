@@ -1,3 +1,4 @@
+import numpy as np
 p="He)yo boi what('s(up)"
 #output = Heyo boi what's(up)
 c=0
