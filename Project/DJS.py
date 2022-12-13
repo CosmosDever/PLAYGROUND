@@ -28,15 +28,14 @@ def dijkstra(adj_matrix, source, dest):
         min_distance = distances[i]
         min_index = i
     if min_index is None:
-      way.append(min_index)
       break
     
     # update distances of neighbors
     for i in range(len(adj_matrix)):
       if adj_matrix[min_index][i] != 0 and distances[i] > distances[min_index] + adj_matrix[min_index][i]:
         distances[i] = distances[min_index] + adj_matrix[min_index][i] 
+        
     # mark the current node as visited
-    
     visited[min_index] = True   
     # if destination has been visited, break
     if visited[dest]:
