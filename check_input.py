@@ -9,4 +9,4 @@ def check_input(input):
         except ValueError:
             print('it str')
 input1 = input()
-check_user_input(input1)
+check_input(input1)
